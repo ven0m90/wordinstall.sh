@@ -55,6 +55,10 @@ wget https://wordlists-cdn.assetnote.io/data/manual/2m-subdomains.txt -P ~/wordl
 wget https://wordlists-cdn.assetnote.io/data/manual/best-dns-wordlist.txt -P ~/wordlist/dns/
 wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt -P ~/wordlist/dns/
 
+#payloads
+wget https://raw.githubusercontent.com/swisskyrepo/PayloadsAllTheThings/master/Directory%20Traversal/Intruder/dotdotpwn.txt 
+cat dotdotpwn.txt | tee -a  ~/wordlist/payloads-list/lfipayloads.txt
+rm dotdotpwn.txt
 
 #resolver
 sudo rm ~/wordlist/resolvers.txt ; curl -L https://raw.githubusercontent.com/trickest/resolvers/main/resolvers.txt -o ~/wordlist/resolvers.txt
