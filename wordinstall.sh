@@ -40,15 +40,19 @@ mkdir -p   ~/wordlist  ~/wordlist/dns  ~/wordlist/payloads-list  ~/wordlist/user
 chmod +rwx ~/wordlist
 
 downloading_wordlist(){
-#fuzzing-ffuf-dirsearch
+#fuzzing-directory  
 wget https://raw.githubusercontent.com/six2dez/OneListForAll/main/onelistforallshort.txt  -P ~/wordlist/
 wget https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/extensions.txt  -P ~/wordlist/
 wget https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/fuzz.txt -P ~/wordlist/
 wget https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt -P ~/wordlist/
-wget #subdomains-bruteforce-ffuf
-wget https://raw.githubusercontent.com/netsecurity-as/subfuz/master/subdomain_megalist.txt -P ~/wordlist/
+wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_directories_1m_2024_04_28.txt -P ~/wordlist/
+
+#js
+wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_js_2024_04_28.txt
 
 #dns-bruteforce-shuffeldns
+wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_subdomains_2024_04_28.txt -P  ~/wordlist/dns/
+wget https://raw.githubusercontent.com/netsecurity-as/subfuz/master/subdomain_megalist.txt -P  ~/wordlist/dns/
 wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/DNS/deepmagic.com-prefixes-top500.txt subdomain-top500.txt -P ~/wordlist/dns/
 wget https://raw.githubusercontent.com/n0kovo/n0kovo_subdomains/main/n0kovo_subdomains_tiny.txt  -P subdomain50k.txt -P ~/wordlist/dns/
 wget https://wordlists-cdn.assetnote.io/data/manual/2m-subdomains.txt -P ~/wordlist/dns/
