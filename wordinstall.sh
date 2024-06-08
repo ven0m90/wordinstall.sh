@@ -45,27 +45,36 @@ wget https://raw.githubusercontent.com/six2dez/OneListForAll/main/onelistforalls
 wget https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/extensions.txt  -P ~/wordlist/
 wget https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/fuzz.txt -P ~/wordlist/
 wget https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt -P ~/wordlist/
-wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_directories_1m_2024_04_28.txt -P ~/wordlist/
+wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_directories_1m_2024_05_28.txt -P ~/wordlist/
 
 #js
-wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_js_2024_04_28.txt
+wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_js_2024_05_28.txt -P ~/wordlist/
+#parameter
+wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_parameters_top_1m_2024_05_28.txt -P ~/wordlist/
 
 #dns-bruteforce-shuffeldns
-wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_subdomains_2024_04_28.txt -P  ~/wordlist/dns/
+wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_subdomains_2024_05_28.txt -P  ~/wordlist/dns/
 wget https://raw.githubusercontent.com/netsecurity-as/subfuz/master/subdomain_megalist.txt -P  ~/wordlist/dns/
 wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/DNS/deepmagic.com-prefixes-top500.txt subdomain-top500.txt -P ~/wordlist/dns/
 wget https://raw.githubusercontent.com/n0kovo/n0kovo_subdomains/main/n0kovo_subdomains_tiny.txt  -P  ~/wordlist/dns/
-wget https://wordlists-cdn.assetnote.io/data/manual/2m-subdomains.txt -P ~/wordlist/dns/
 wget https://wordlists-cdn.assetnote.io/data/manual/best-dns-wordlist.txt -P ~/wordlist/dns/
 wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt -P ~/wordlist/dns/
 
 #payloads
+#lfi
 wget https://raw.githubusercontent.com/swisskyrepo/PayloadsAllTheThings/master/Directory%20Traversal/Intruder/dotdotpwn.txt 
-cat dotdotpwn.txt | tee -a  ~/wordlist/payloads-list/lfipayloads.txt
+wget https://raw.githubusercontent.com/InfoSecWarrior/Offensive-Payloads/main/Directory-Traversal-Payloads.txt
+wget https://raw.githubusercontent.com/emadshanab/LFI-Payload-List/master/LFI%20payloads.txt
+wget https://raw.githubusercontent.com/rezaJOY/Local-File-Inclusion-Payloads/main/lfi%20payload.txt
+wget https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/pathtotest_huge.txt
+
+cat dotdotpwn.txt Directory-Traversal-Payloads.txt LFI*.txt lfi*.txt pathtotest_huge.txt | sort -u | tee -a  ~/wordlist/payloads-list/lfipayloads.txt 
 rm dotdotpwn.txt
+#xss
+wget https://raw.githubusercontent.com/InfoSecWarrior/Offensive-Payloads/main/Cross-Site-Scripting-XSS-Payloads.txt -P  ~/wordlist/payloads-list/
 
 #resolver
-sudo rm ~/wordlist/resolvers.txt ; curl -L https://raw.githubusercontent.com/trickest/resolvers/main/resolvers.txt -o ~/wordlist/resolvers.txt
+rm ~/wordlist/resolvers.txt ; curl -L https://raw.githubusercontent.com/trickest/resolvers/main/resolvers.txt -o ~/wordlist/resolvers.txt
 
 
 }
