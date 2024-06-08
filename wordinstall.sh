@@ -69,7 +69,7 @@ wget https://raw.githubusercontent.com/rezaJOY/Local-File-Inclusion-Payloads/mai
 wget https://raw.githubusercontent.com/D35m0nd142/LFISuite/master/pathtotest_huge.txt
 
 cat dotdotpwn.txt Directory-Traversal-Payloads.txt LFI*.txt lfi*.txt pathtotest_huge.txt | sort -u | tee -a  ~/wordlist/payloads-list/lfipayloads.txt 
-rm dotdotpwn.txt
+rm dotdotpwn.txt Directory-Traversal-Payloads.txt LFI*.txt lfi*.txt pathtotest_huge.txt
 #xss
 wget https://raw.githubusercontent.com/InfoSecWarrior/Offensive-Payloads/main/Cross-Site-Scripting-XSS-Payloads.txt -P  ~/wordlist/payloads-list/
 
