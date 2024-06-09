@@ -35,7 +35,7 @@ sudo apt install -y lolcat wget git curl toilet figlet ;
 echo -e $BOLD"[+]Installing Wordlist...$NC ${result}" | lolcat
 git clone https://github.com/ven0m90/wordinstall.sh.git  ~/wordlist
 
-mkdir -p   ~/wordlist  ~/wordlist/dns  ~/wordlist/payloads-list  ~/wordlist/user-pass  ~/wordlist/words-list
+mkdir -p   ~/wordlist  ~/wordlist/dns  ~/wordlist/payloads-list  ~/wordlist/user-pass  ~/wordlist/words-list   ~/wordlist/parameters 
 
 chmod +rwx ~/wordlist
 
@@ -50,8 +50,8 @@ wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_directories_1
 #js
 wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_js_2024_05_28.txt -P ~/wordlist/
 #parameter
-wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_parameters_top_1m_2024_05_28.txt -P ~/wordlist/
-
+wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_parameters_top_1m_2024_05_28.txt -P  ~/wordlist/parameters/
+wget https://raw.githubusercontent.com/s0md3v/Arjun/master/arjun/db/large.txt -P  ~/wordlist/parameters/
 #dns-bruteforce-shuffeldns
 wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_subdomains_2024_05_28.txt -P  ~/wordlist/dns/
 wget https://raw.githubusercontent.com/netsecurity-as/subfuz/master/subdomain_megalist.txt -P  ~/wordlist/dns/
