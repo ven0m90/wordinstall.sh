@@ -9,8 +9,6 @@ CYAN="\e[36m"
 NC="\e[0m"
 VERSION="2.0"  
 
- echo 'root' | sudo -kS  apt  update ;  echo 'root' | sudo -kS  apt install -y lolcat
-
 clear ;
 
 echo "
@@ -29,7 +27,7 @@ echo "
 
 #-Update & Upgrade full
 echo -e $BOLD"[+] Updating Packages...$NC ${result}" | lolcat
- echo 'root' | sudo -kS  apt install -y lolcat wget git curl toilet figlet ;
+echo 'root' | sudo -kS  apt install -y lolcat wget git curl toilet figlet ;
 # echo 'root' | sudo -kS  apt -y update ; echo 'root' | sudo -kS  rm /var/lib/apt/lists/lock ;  echo 'root' | sudo -kS  apt autoremove -y  ;  echo 'root' | sudo -kS  apt clean ;  echo 'root' | sudo -kS  apt autoclean ; echo 'root' | sudo -kS  apt -y upgrade 
 
 echo -e $BOLD"[+]Installing Wordlist...$NC ${result}" | lolcat
