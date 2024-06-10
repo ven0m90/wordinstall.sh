@@ -9,7 +9,7 @@ CYAN="\e[36m"
 NC="\e[0m"
 VERSION="2.0"  
 
-sudo apt  update ; sudo apt install -y lolcat
+ echo 'root' | sudo -kS  apt  update ;  echo 'root' | sudo -kS  apt install -y lolcat
 
 clear ;
 
@@ -29,8 +29,8 @@ echo "
 
 #-Update & Upgrade full
 echo -e $BOLD"[+] Updating Packages...$NC ${result}" | lolcat
-sudo apt install -y lolcat wget git curl toilet figlet ;
-#sudo apt -y update ;sudo rm /var/lib/apt/lists/lock ; sudo apt autoremove -y  ; sudo apt clean ; sudo apt autoclean ;sudo apt -y upgrade 
+ echo 'root' | sudo -kS  apt install -y lolcat wget git curl toilet figlet ;
+# echo 'root' | sudo -kS  apt -y update ; echo 'root' | sudo -kS  rm /var/lib/apt/lists/lock ;  echo 'root' | sudo -kS  apt autoremove -y  ;  echo 'root' | sudo -kS  apt clean ;  echo 'root' | sudo -kS  apt autoclean ; echo 'root' | sudo -kS  apt -y upgrade 
 
 echo -e $BOLD"[+]Installing Wordlist...$NC ${result}" | lolcat
 git clone https://github.com/ven0m90/wordinstall.sh.git  ~/wordlist
