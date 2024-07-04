@@ -51,6 +51,7 @@ wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_js_2024_05_28
 wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_parameters_top_1m_2024_05_28.txt -P  ~/wordlist/parameters/
 wget https://raw.githubusercontent.com/s0md3v/Arjun/master/arjun/db/large.txt -P  ~/wordlist/parameters/
 #dns-bruteforce-shuffeldns
+curl -sL https://raw.githubusercontent.com/guelfoweb/knock/master/knock/wordlist/wordlist.txt -o ~/wordlist/dns/kockpy10k.txt
 wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_subdomains_2024_05_28.txt -P  ~/wordlist/dns/
 wget https://raw.githubusercontent.com/netsecurity-as/subfuz/master/subdomain_megalist.txt -P  ~/wordlist/dns/
 wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/DNS/deepmagic.com-prefixes-top500.txt subdomain-top500.txt -P ~/wordlist/dns/
