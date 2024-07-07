@@ -46,6 +46,7 @@ wget https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt -
 wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_directories_1m_2024_05_28.txt -P ~/wordlist/
 wget  https://gist.githubusercontent.com/nullenc0de/96fb9e934fc16415fbda2f83f08b28e7/raw/146f367110973250785ced348455dc5173842ee4/content_discovery_nullenc0de.txt  -P ~/wordlist/
 wget https://raw.githubusercontent.com/emadshanab/admin-paths/main/admin.txt -P ~/wordlist/
+wget https://raw.githubusercontent.com/emadshanab/Headers-Bypass-List/main/Headers.txt -P ~/wordlist/
 
 #js
 wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_js_2024_05_28.txt -P ~/wordlist/
