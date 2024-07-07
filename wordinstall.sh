@@ -38,6 +38,10 @@ mkdir -p   ~/wordlist  ~/wordlist/dns  ~/wordlist/payloads-list  ~/wordlist/user
 chmod +rwx ~/wordlist
 
 downloading_wordlist(){
+
+git clone https://github.com/random-robbie/bruteforce-lists  ~/wordlist/bruteforce-lists
+git clone https://github.com/orwagodfather/WordList   ~/wordlist/gofather-wordlist
+
 #fuzzing-directory  
 wget https://raw.githubusercontent.com/six2dez/OneListForAll/main/onelistforallshort.txt  -P ~/wordlist/
 wget https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/extensions.txt  -P ~/wordlist/
