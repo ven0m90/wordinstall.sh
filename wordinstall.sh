@@ -64,7 +64,7 @@ wget https://raw.githubusercontent.com/netsecurity-as/subfuz/master/subdomain_me
 wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/DNS/deepmagic.com-prefixes-top500.txt subdomain-top500.txt -P ~/wordlist/dns/
 wget https://raw.githubusercontent.com/n0kovo/n0kovo_subdomains/main/n0kovo_subdomains_tiny.txt  -P  ~/wordlist/dns/
 wget https://wordlists-cdn.assetnote.io/data/manual/best-dns-wordlist.txt -P ~/wordlist/dns/
-wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt -P ~/wordlist/dns/
+wget https://gist.githubusercontent.com/jhaddix/f64c97d0863a78454e44c2f7119c2a6a/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt -P ~/wordlist/dns/
 wget https://wordlists-cdn.assetnote.io/data/manual/2m-subdomains.txt -P ~/wordlist/dns/
 
 #payloads
