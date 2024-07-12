@@ -65,6 +65,7 @@ wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/
 wget https://raw.githubusercontent.com/n0kovo/n0kovo_subdomains/main/n0kovo_subdomains_tiny.txt  -P  ~/wordlist/dns/
 wget https://wordlists-cdn.assetnote.io/data/manual/best-dns-wordlist.txt -P ~/wordlist/dns/
 wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt -P ~/wordlist/dns/
+wget https://wordlists-cdn.assetnote.io/data/manual/2m-subdomains.txt -P ~/wordlist/dns/
 
 #payloads
 #lfi
