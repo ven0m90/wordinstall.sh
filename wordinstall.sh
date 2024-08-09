@@ -43,6 +43,7 @@ git clone https://github.com/random-robbie/bruteforce-lists  ~/wordlist/fuzzing/
 git clone https://github.com/orwagodfather/WordList   ~/wordlist/fuzzing/gofather-wordlist
 
 #fuzzing-directory  
+wget https://raw.githubusercontent.com/ayoubfathi/leaky-paths/main/leaky-paths.txt -P  ~/wordlist/
 wget https://raw.githubusercontent.com/six2dez/OneListForAll/main/onelistforallshort.txt  -P ~/wordlist/fuzzing/
 wget https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/fuzz.txt -P  ~/wordlist/fuzzing/
 wget https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt -P  ~/wordlist/fuzzing/
