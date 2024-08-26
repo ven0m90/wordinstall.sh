@@ -58,6 +58,7 @@ wget https://raw.githubusercontent.com/s0md3v/Arjun/master/arjun/db/large.txt -P
 wget https://wordlists-cdn.assetnote.io/data/automated/httparchive_subdomains_2024_05_28.txt -P  ~/wordlist/dns/
 git clone https://github.com/n0kovo/n0kovo_subdomains  ~/wordlist/dns/n0kovo_subdomains 
 curl -sL https://raw.githubusercontent.com/guelfoweb/knock/master/knock/wordlist/wordlist.txt -o ~/wordlist/dns/kockpy10k.txt
+curl -sL  https://gist.githubusercontent.com/six2dez/ffc2b14d283e8f8eff6ac83e20a3c4b4/raw -o ~/wordlist/dns/permutations_list.txt 
 
 
 #payloads
