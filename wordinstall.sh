@@ -42,6 +42,7 @@ downloading_wordlist(){
 git clone https://github.com/random-robbie/bruteforce-lists  ~/wordlist/fuzzing/bruteforce-lists
 git clone https://github.com/orwagodfather/WordList   ~/wordlist/fuzzing/gofather-wordlist
 
+wget https://raw.githubusercontent.com/danielmiessler/SecLists/master/Discovery/DNS/namelist.txt -P   ~/wordlist/
 #fuzzing-directory  
 wget https://raw.githubusercontent.com/ayoubfathi/leaky-paths/main/leaky-paths.txt -P  ~/wordlist/
 wget https://raw.githubusercontent.com/Bo0oM/fuzz.txt/master/fuzz.txt -P  ~/wordlist/fuzzing/boom.txt
